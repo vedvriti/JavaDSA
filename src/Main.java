@@ -11,5 +11,10 @@ public class Main {
             // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
             System.out.println("i = " + i);
         }
+            Cookie C1 = new Cookie("yellow");
+            String a = C1.getColor();
+            System.out.println(a);
+            C1.setColor("red");
+            System.out.println(C1.getColor());
     }
 }

@@ -13,12 +13,10 @@ public class DistinctElements {
     public static ArrayList<Integer> distinctElementsInAnArray(int[] arr)
     {
         HashSet<Integer> set = new HashSet<>();
-        for(int i=0;i<arr.length;i++)
-        {
-            int num = arr[i];
-            if(!set.contains(num)) {
-              System.out.print(num + " ");
-              set.add(num);
+        for (int num : arr) {
+            if (!set.contains(num)) {
+                System.out.print(num + " ");
+                set.add(num);
             }
         }
         return new ArrayList<>(set);
